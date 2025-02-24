@@ -8,24 +8,39 @@ const Lights = () => {
     <>
       <pointLight
         position={[0, 100, 0]}
-        intensity={1000}
+        intensity={20000}
         ref={pointLight}
         color={"#ffffff"}
-        castShadow
       />
       <pointLight
         position={[0, 0, 100]}
-        intensity={1000}
+        intensity={20000}
         ref={pointLight}
         color={"#ffffff"}
-        castShadow
       />
       <pointLight
         position={[100, 0, 0]}
-        intensity={1000}
+        intensity={20000}
         ref={pointLight}
         color={"#ffffff"}
-        castShadow
+      />
+      <pointLight
+        position={[-100, 0, 0]}
+        intensity={20000}
+        ref={pointLight}
+        color={"#ffffff"}
+      />
+      <pointLight
+        position={[0, 0, -100]}
+        intensity={20000}
+        ref={pointLight}
+        color={"#ffffff"}
+      />
+      <pointLight
+        position={[0, -100, 0]}
+        intensity={20000}
+        ref={pointLight}
+        color={"#ffffff"}
       />
 
       {/* <pointLight position={[0, -30, 0]} intensity={1000} ref={pointLight} /> */}
